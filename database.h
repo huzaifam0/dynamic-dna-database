@@ -1,5 +1,5 @@
-#ifndef A5_H
-#define A5_H
+#ifndef DATABASE_H
+#define DATABASE_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -32,4 +32,4 @@ void free_database(struct DNARecord *database, int record_count);
 int add_record(struct DNARecord **db_ptr, int *record_count, const char *id, const char *classification, const char *sequence);
 int delete_record(struct DNARecord **db_ptr, int *record_count, const char *id_to_delete);
 
-#endif // A5_H
+#endif // DATABASE_H
