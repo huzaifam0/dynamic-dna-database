@@ -1,13 +1,5 @@
-/*
- * Filename:  main.c
- *
- * This file is used as the main tester file for CIS*1300 Assignment 5.
- * It is provided for you to test your functions. 
- * The tests provided are obviously not comprehensive. Feel free to add additional tests.
- * PS: Do NOT submit this file.
- */
 
-#include "a5.h"
+#include "database.h"
 
 int main(void) {
     int record_count = 0;
@@ -104,8 +96,6 @@ int main(void) {
 
 
     // Task 8 Test. Free All Allocated Memory 
-    // This function must free all individual sequences AND the main array.
-
     printf("Calling free_database to clean up %d records...\n", record_count);
     
     free_database(database, record_count);
